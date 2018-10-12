@@ -1,0 +1,396 @@
+/*=============================================
+HEADER
+=============================================*/
+
+#head-container {
+    margin-bottom: 35px;
+    background-color: #eeeeee;
+}
+
+#head-container #head {
+    padding: 15px;
+}
+
+#head-container #head ul {
+    list-style: none;
+}
+#head-container #head ul li {
+    display: inline;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Hind', sans-serif;
+    cursor: pointer;
+
+}
+
+#head-container #head ul li a:link{
+    text-decoration: none;
+    color: #cf000f;
+
+}
+
+
+#head-container #head ul li a:visited{
+    color: #d64541;
+}
+
+
+
+#head-container #head ul li a:hover{
+    color: #cf000f;
+}
+
+
+
+
+
+/*=============================================
+SLIDE
+=============================================*/
+
+#slide {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+#slide ul {
+    position: relative;
+    left: 0%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 400%;
+    clear: both;
+    display: table;
+    list-style: none;
+
+}
+
+#slide ul li {
+    position: relative;
+    float: left;
+    width: 25%;
+    padding: 0;
+}
+
+#slide ul li img {
+    width: 100%;
+}
+
+#slide #slide-options {
+    padding: 0;
+}
+
+#slide .slide-option1 img {
+    position: absolute;
+    opacity: 1;
+    top: 15%;
+    right: 10%;
+    width: 45%;
+}
+
+#slide .slide-option1 .text-slide {
+    position: absolute;
+    width: 40%;
+    top: 20%;
+    left: 10%;
+}
+
+#slide .slide-option2 img {
+
+    position: absolute;
+    opacity: 1;
+    top: 5%;
+    left: 15%;
+    width: 25%;
+}
+
+#slide .slide-option2 .text-slide {
+    position: absolute;
+    text-align: right;
+    width: 40%;
+    top: 15%;
+    right: 15%;
+}
+
+#slide .slide-options h1 {
+    text-transform: uppercase;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    opacity: 1;
+    top: -10%;
+    color: #333;
+}
+
+#slide .slide-options h2 {
+    text-transform: uppercase;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    opacity: 1;
+    top: -10%;
+    color: #777;
+}
+
+#slide .slide-options h3 {
+    text-transform: uppercase;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    opacity: 1;
+    top: -10%;
+    color: #888;
+}
+
+#slide .slide-options button {
+    border: 0px;
+    margin-top: 10px;
+    opacity: 1;
+    top: -10%;
+}
+
+#slide .slide-options button:hover {
+    background: black;
+    color: white;
+    border: 0px;
+}
+
+#slide .slide-options button span {
+    margin-left: 10px;
+}
+
+#slide .controls {
+
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#slide #play {
+    color: #888;
+    padding: 15px;
+    top: -1%;
+    right: -5px;
+    font-size: 35px;
+    opacity: 1;
+}
+
+#slide #play:hover {
+    color: #777;
+}
+
+/*=============================================
+ARROWS
+=============================================*/
+
+#slide .arrows {
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#slide #back {
+    background: #666;
+    left: 0;
+    opacity: 0;
+}
+
+#slide #next {
+    background: #666;
+    right: 0;
+    opacity: 0;
+}
+
+#slide #back:hover, #slide #next:hover {
+    background: #777;
+}
+
+#slide #back:active, #slide #next:active {
+    background: #444;
+}
+
+/*=============================================
+PAGINATION
+=============================================*/
+
+#slide #pagination {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    background: rgba(0, 0, 0, .05);
+    padding: 0;
+}
+
+#slide #pagination li {
+    display: inline-block;
+    margin: 0px 5px;
+    cursor: pointer;
+    opacity: .5;
+    color: white;
+    text-shadow: 0px 0px 5px #333;
+}
+
+#slide #pagination li:first-child {
+    opacity: 1;
+}
+
+#btnSlide {
+    width: 150px;
+    border: 0px;
+    font-size: 25px;
+    padding: 2px;
+}
+
+/*=============================================
+LG 1366px
+=============================================*/
+
+@media (min-width: 1200px) {
+
+    #slide #back {
+        top: 37%;
+        padding: 40px 15px 40px 10px;
+        font-size: 22px;
+    }
+
+    #slide #next {
+        top: 37%;
+        padding: 40px 10px 40px 15px;
+        font-size: 22px;
+    }
+
+    #slide .slide-options h1 {
+        font-size: 50px;
+        margin-top: 5px;
+    }
+
+    #slide .slide-options h2 {
+        font-size: 35px;
+    }
+
+    #slide .slide-options h3 {
+        font-size: 30px;
+    }
+
+    #slide .slide-options button {
+        padding: 10px;
+    }
+
+}
+
+/*=============================================
+MD 1024px
+=============================================*/
+
+@media (max-width: 1199px) and (min-width: 992px) {
+
+    #slide #back {
+        top: 35%;
+        padding: 40px 15px 40px 10px;
+        font-size: 18px;
+    }
+
+    #slide #next {
+        top: 35%;
+        padding: 40px 10px 40px 15px;
+        font-size: 18px;
+    }
+
+    #slide .slide-options h1 {
+        font-size: 35px;
+        margin-top: 5px;
+    }
+
+    #slide .slide-options h2 {
+        font-size: 30px;
+    }
+
+    #slide .slide-options h3 {
+        font-size: 20px;
+    }
+
+    #slide .slide-options button {
+        padding: 10px;
+    }
+
+}
+
+/*=============================================
+SM 768px
+=============================================*/
+
+@media (max-width: 991px) and (min-width: 768px) {
+
+    #slide #back {
+        top: 35%;
+        padding: 30px 8px 30px 5px;
+        font-size: 14px;
+    }
+
+    #slide #next {
+        top: 35%;
+        padding: 30px 5px 30px 8px;
+        font-size: 14px;
+    }
+
+    #slide .slide-options h1 {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+    #slide .slide-options h2 {
+        font-size: 20px;
+    }
+
+    #slide .slide-options h3 {
+        font-size: 15px;
+    }
+
+    #slide .slide-options button {
+        padding: 5px;
+    }
+
+}
+
+/*=============================================
+XS 320px
+=============================================*/
+
+@media (max-width: 767px) {
+
+    #slide #back, #slide #next {
+        display: none;
+    }
+
+    #slide .slide-options h1 {
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: -20px;
+    }
+
+    #slide .slide-options h2 {
+        display: none;
+    }
+
+    #slide .slide-options h3 {
+        font-size: 10px;
+        margin-bottom: -5px;
+    }
+
+    #slide .slide-options button {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+}
+
+
+

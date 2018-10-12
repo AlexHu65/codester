@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple slider</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind:600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/simple-slide.css">
+</head>
+<body>
+<div id="head-container" class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-right">
+            <header>
+                <div class="pull-right" id="head">
+                    <ul>
+                        <li><a href="mailto:alejandrotsu23@gmail.com?Subject=Hello%20Alex">Contact</a></li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <!-- here starts slide -->
+    <div class="row">
+        <div class="container-fluid" id="slide">
+            <div class="row">
+                <ul>
+                    <li>
+                        <div class="slide-options">
+                            <img class="slide-img" src="img/slide3.jpg" alt="slide-1">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide-options">
+                            <img class="slide-img" src="img/slide3.jpg" alt="slide-1">
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="slide-options ">
+                            <img class="slide-img" src="img/slide3.jpg" alt="slide-1">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ol id="pagination">
+                <li id="item-pagination" item="1"><span class="fa fa-circle"></span></li>
+                <li id="item-pagination" item="2"><span class="fa fa-circle"></span></li>
+                <li id="item-pagination" item="3"><span class="fa fa-circle"></span></li>
+
+            </ol>
+            <div class="controls" id="play"><span class="glyphicon glyphicon-pause"></span></div>
+            <div class="arrows" id="back"><span class="fa fa-chevron-left"></span></div>
+            <div class="arrows" id="next"><span class="fa fa-chevron-right"></span></div>
+        </div>
+    </div>
+    <!-- here ends slide -->
+
+</div>
+<center>
+    <button id="btnSlide"><i class="fa fa-angle-up"></i></button>
+</center>
+
+<script src="js/jquery.min.js" type="application/javascript"></script>
+<script src="js/simple-slide.js" type="application/javascript"></script>
+<script src="js/all.js" type="application/javascript"></script>
+<script src="js/jquery.easing.js" type="application/javascript"></script>
+
+</body>
+</html>
